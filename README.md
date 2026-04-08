@@ -1,5 +1,4 @@
-## README.txt
-CO3093 / CO3094 – P2P Tracker and Peer System  
+## CO3093 / CO3094 – P2P Tracker and Peer System
 HCMC University of Technology – bksysnet
 
 This project implements:
