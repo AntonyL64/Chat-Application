@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BKsysNET - Chat</title>
+    <link rel="stylesheet" href="/static/css/chat.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="chat-header">
+        <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        <h2>BKsysNET</h2>
+        <div class="user-info">
+            <span id="currentUsername">User</span>
+            <button class="btn-logout" id="logoutBtn">Logout</button>
+        </div>
+    </div>
+
+    <!-- Main Chat Container -->
+    <div class="chat-main">
+        <!-- Left Sidebar: Users/Channels -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">Online Channels & Users</div>
+            <div class="users-list" id="usersList">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+
+        <!-- Right Side: Messages -->
+        <div class="message-area">
+            <div class="messages-header" id="messagesHeader">
+                General Chat
+            </div>
+            
+            <!-- Message Display -->
+            <div class="messages-container" id="messagesContainer">
+                <div class="empty-state">
+                    <div class="empty-state-icon">💬</div>
+                    <p>No messages yet. Say hello!</p>
+                </div>
+            </div>
+            
+            <!-- Message Input -->
+            <div class="message-input-container">
+                <input 
+                    type="text"
+                    class="message-input" 
+                    id="messageInput" 
+                    placeholder="Type your message here..."
+                    autocomplete="off"
+                />
+                <button class="btn-send" id="sendBtn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/chat.js"></script>
+</body>
+</html>
